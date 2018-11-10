@@ -27,10 +27,10 @@ int main()
 	//tipo de dato - nombre archivo
 
 	//archivo.open(nombreArchivo.c_str(),ios::out); //abriendo el archivo , ios::out si existe lo crea o reemplaza
-	archivo.open("Fichero.txt",ios::app); //abriendo el archivo , ios::out si existe lo crea o reemplaza
+	archivo.open("Registro.txt",ios::app); //abriendo el archivo , ios::out si existe lo crea o reemplaza
 
 	if(archivo.fail()){
-		archivo.open("Fichero.txt",ios::out);
+		archivo.open("Registro.txt",ios::out);
 		exit(1); //strdlib.h para salir del programa rapido
 	}
 
