@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1541887930 source:c:\users\lenovo\desktop\basedatos_project\main.cpp
+	<iostream>
+	<conio.h>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<string>
+	<cstdlib>
+	<windows.h>
+	"Empleado.h"
+	"Archivo.h"
+	"Menu.h"
+
+1541880887 c:\users\lenovo\desktop\basedatos_project\include\empleado.h
+
+1541880900 source:c:\users\lenovo\desktop\basedatos_project\src\empleado.cpp
+	"Empleado.h"
+
+1541879107 source:c:\users\lenovo\desktop\basedatos_project\src\archivo.cpp
+	"Archivo.h"
+	<fstream>
+	<stdlib.h>
+	<iostream>
+
+1541879121 c:\users\lenovo\desktop\basedatos_project\include\archivo.h
+	<fstream>
+	<stdlib.h>
+	<iostream>
+
+1541887607 source:c:\users\lenovo\desktop\basedatos_project\src\menu.cpp
+	"Menu.h"
+	<iostream>
+
+1541888089 c:\users\lenovo\desktop\basedatos_project\include\menu.h
+	"Archivo.h"
+	"Empleado.h"
+	<iostream>
+	<windows.h>
+

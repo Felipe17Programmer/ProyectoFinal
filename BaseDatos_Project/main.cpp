@@ -1,25 +1,46 @@
-#include<iostream>
+#include <iostream>
 #include<conio.h>
 #include<fstream>
 #include<stdlib.h>
+#include<string.h>
+#include<string>
 #include<cstdlib> //para usar system(cls)
 #include<windows.h>
-#include "Empleado.h"
-#include "Archivo.h"
-#include "Menu.h"
-#include <string>
+
 #define TECLA_ARRIBA 'i'  //declaraciones constantes para usar las teclas con codigo ascii
 #define TECLA_ABAJO 'k'
 #define ENTER 13
+#include "Empleado.h"
+#include "Archivo.h"
+#include "Menu.h"
 
 using namespace std;
 
-
 void gotoxy(int x,int y);
-int menu( string titulo,  char *opciones[], int n);
+int menu( char* titulo,  char *opciones[], int n);
 void menu_principal();
+char getch2();  //permite poder usar menu con el teclado
 
-char getch2(){  //permite poder usar menu con el teclado
+int main()
+{
+	ofstream archivo;
+	//tipo de dato - nombre archivo
+
+	//archivo.open(nombreArchivo.c_str(),ios::out); //abriendo el archivo , ios::out si existe lo crea o reemplaza
+	archivo.open("Fichero.txt",ios::app); //abriendo el archivo , ios::out si existe lo crea o reemplaza
+
+	if(archivo.fail()){
+		archivo.open("Fichero.txt",ios::out);
+		exit(1); //strdlib.h para salir del programa rapido
+	}
+
+	archivo.close(); //para cerrar el archivo.-
+
+	menu_principal();
+    return 0;
+}
+
+char getch2(){
 	char c=0;
 	DWORD modo, contador;
 	HANDLE ih = GetStdHandle(STD_INPUT_HANDLE);
@@ -38,25 +59,6 @@ char getch2(){  //permite poder usar menu con el teclado
 	return c;
 }
 
-int main(){
-
-	ofstream archivo;
-	//tipo de dato - nombre archivo
-
-	//archivo.open(nombreArchivo.c_str(),ios::out); //abriendo el archivo , ios::out si existe lo crea o reemplaza
-	archivo.open("Fichero.txt",ios::app); //abriendo el archivo , ios::out si existe lo crea o reemplaza
-
-	if(archivo.fail()){
-		archivo.open("Fichero.txt",ios::out);
-		exit(1); //strdlib.h para salir del programa rapido
-	}
-
-	archivo.close(); //para cerrar el archivo.-
-
-	menu_principal();
-	return 0;
-}
-
  void gotoxy(int x,int y){
       HANDLE hcon;
       hcon = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -71,9 +73,8 @@ void menu_principal(){
 	bool repite=true;
 	int opcion;
 
-
 	//Titulo y opciones del menu
-	string titulo="MENU PRINCIPAL";
+	char* titulo="MENU PRINCIPAL";
 	char *opciones[]={"Ingresar","Buscar","Modificar","Eliminar","Salir"};
 	int n = 5; //numero de opciones
 
@@ -91,10 +92,10 @@ void menu_principal(){
 		//Alternativas
 		switch(opcion){
 			case 1:
-				m1.menu_ingresar();
+				m1.menuIngresar();
 				break;
 			case 2:
-				m2.menu_buscar();
+				m2.menuBuscar();
 				break;
 			case 3:
 				cout<<"MODIFICAR";
@@ -111,7 +112,7 @@ void menu_principal(){
 	}while(repite);
 }
 
-int menu( string titulo,  char *opciones[], int n){
+int menu( char* titulo,  char *opciones[], int n){
 	int opcionSeleccionada = 1;
 	int tecla;
 	bool repite=true;
@@ -155,3 +156,4 @@ int menu( string titulo,  char *opciones[], int n){
 
 	return opcionSeleccionada;
 }
+
