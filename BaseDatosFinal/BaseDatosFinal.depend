@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1543315374 source:c:\users\lenovo\desktop\basedatosfinal\main.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"Menu.h"
+	"Archivo.h"
+	"Empleado.h"
+
+1543298549 source:c:\users\lenovo\desktop\basedatosfinal\src\archivo.cpp
+	"Archivo.h"
+
+1543299029 c:\users\lenovo\desktop\basedatosfinal\include\archivo.h
+
+1543200545 source:c:\users\lenovo\desktop\basedatosfinal\src\empleado.cpp
+	"Empleado.h"
+
+1543302228 c:\users\lenovo\desktop\basedatosfinal\include\empleado.h
+
+1543318529 source:c:\users\lenovo\desktop\basedatosfinal\src\menu.cpp
+	"Menu.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<conio.h>
+	<limits>
+
+1543318625 c:\users\lenovo\desktop\basedatosfinal\include\menu.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Archivo.h"
+	"Funciones.h"
+	"Empleado.h"
+
+1543280244 source:c:\users\lenovo\desktop\basedatosfinal\src\puntoc.cpp
+	<iostream>
+	"PuntoC.h"
+
+1543225582 c:\users\lenovo\desktop\basedatosfinal\include\puntoc.h
+
+1543315062 c:\users\lenovo\desktop\basedatosfinal\include\funciones.h
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+
+1543313368 c:\users\lenovo\desktop\basedatosfinal\include\strategyinterface.h
+
+1543315529 c:\users\lenovo\desktop\basedatosfinal\include\context.h
+
+1543318409 c:\users\lenovo\desktop\basedatosfinal\include\concretestrategya.h
+	<iostream>
+	<limits>
+
+1543318415 c:\users\lenovo\desktop\basedatosfinal\include\concretestrategyb.h
+	<iostream>
+	<limits>
+
+1543314908 c:\users\lenovo\desktop\basedatosfinal\include\menuf.h
+	"Archivo.h"
+	"Funciones.h"
+	"Empleado.h"
+
