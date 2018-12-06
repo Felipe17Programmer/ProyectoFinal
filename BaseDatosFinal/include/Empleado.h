@@ -5,7 +5,7 @@
 class Empleado
 {
     protected:
-        char opca;
+        //char opca;
         int clave = 0, auxclave=0;
         char nombre[10];
         char apellidoP[10];

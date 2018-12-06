@@ -9,7 +9,6 @@
 #include <windows.h>
 #include <limits>
 
-#include "Archivo.h"
 #include "Funciones.h"
 #include "Empleado.h"
 
@@ -19,91 +18,23 @@
 
 using namespace std;
 
-template<typename T,typename I,typename F>
-class Menu:public Funciones,public Archivo,private Empleado
+class Menu:public Funciones,public Empleado
 {
-        public:;
-        Menu();
-        Menu(char* titulo,char* *opciones,int n);
-        ~Menu();
-        void registro();
-        void busco();
-        void elimino();
-        void leo();
-        void modifico();
-
-    private:
+    protected:
         char* titulo;
         char* *opciones;
         int n;
 
-        T opca;
-        T nombre[10];
-        T apellidoP[10];
-        T apellidoM[10];
-        I clave = 0;
-        I auxclave=0;
-        I edad;
-        I dni;
-        I telefono;
-        F sueldo;
+        char opca;
 
-        T auxnombre[10];
-        T auxapellidoP[10];
-        T auxapellidoM[10];
-        I auxedad;
-        I auxdni;
-        I auxtelefono;
-        F auxsueldo;
+    public:
+        Menu();
+        Menu(char* titulo,char* *opciones,int n);
+        ~Menu();
 
-        void comprobar(I &x){
-           while( true )
-          {
-            cout<<"\tIngresa: ";
-            cin >> x;
-            if( !cin.good() )
-            {
-              cout << "\tSOLO SE INGRESAN NUMEROS!!!\n"<<endl;
-              cin.clear();
-              cin.ignore(numeric_limits<streamsize>::max(),'\n');
-            }
-            else
-              break;
-          }
-        }
+        virtual void empieza()=0;
 
-        void comprobar(F &x){
-           while( true )
-          {
-            cout<<"\tIngresa: ";
-            cin >> x;
-            if( !cin.good() )
-            {
-              cout << "\tSOLO SE INGRESAN NUMEROS!!!\n"<<endl;
-              cin.clear();
-              cin.ignore(numeric_limits<streamsize>::max(),'\n');
-            }
-            else
-              break;
-          }
-        }
 
-        void comprobar(T x[]){
-
-           while( true )
-          {
-            cout<<"\tIngresa: ";
-            cin >> x;
-            if( !cin.good() )
-            {
-              cout << "\tSOLO SE INGRESAN CARACTERES!!!\n"<<endl;
-              cin.clear();
-              cin.ignore(numeric_limits<streamsize>::max(),'\n');
-            }
-            else
-              break;
-          }
-        }
 };
 
 #endif // MENU_H

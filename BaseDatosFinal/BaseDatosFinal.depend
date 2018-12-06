@@ -71,3 +71,147 @@
 	"Funciones.h"
 	"Empleado.h"
 
+1543310760 source:c:\users\lenovo\downloads\proyectofinal-master\basedatosfinal\main.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"Menu.h"
+	"Archivo.h"
+	"Empleado.h"
+
+1543310760 c:\users\lenovo\downloads\proyectofinal-master\basedatosfinal\include\menu.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Archivo.h"
+	"Funciones.h"
+	"Empleado.h"
+
+1543310760 c:\users\lenovo\downloads\proyectofinal-master\basedatosfinal\include\archivo.h
+
+1543310760 c:\users\lenovo\downloads\proyectofinal-master\basedatosfinal\include\funciones.h
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+
+1543310760 c:\users\lenovo\downloads\proyectofinal-master\basedatosfinal\include\empleado.h
+
+1543310760 source:c:\users\lenovo\downloads\proyectofinal-master\basedatosfinal\src\menu.cpp
+	"Menu.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<conio.h>
+	<limits>
+
+1544098167 source:c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\main.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"Menu.h"
+	"Empleado.h"
+	"Registro.h"
+	"Busca.h"
+	"Elimino.h"
+	"Lee.h"
+	"Modifico.h"
+
+1544098286 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\menu.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Funciones.h"
+	"Empleado.h"
+
+1544096993 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\archivo.h
+
+1544098286 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\funciones.h
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+
+1544097389 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\empleado.h
+
+1544097389 source:c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\src\menu.cpp
+	"Menu.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<conio.h>
+	<limits>
+
+1544097288 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\registro.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Funciones.h"
+	"Empleado.h"
+
+1544097288 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\busca.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Funciones.h"
+	"Empleado.h"
+
+1544097288 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\elimino.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Funciones.h"
+	"Empleado.h"
+
+1544097288 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\lee.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Funciones.h"
+	"Empleado.h"
+
+1544097288 c:\users\lenovo\documents\proyectos\proyectofinal\basedatosfinal\include\modifico.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<limits>
+	"Funciones.h"
+	"Empleado.h"
+

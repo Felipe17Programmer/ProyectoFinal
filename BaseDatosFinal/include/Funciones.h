@@ -78,6 +78,55 @@ class Funciones
             }while(repite);
             return opcionSeleccionada;
         }
+
+         void comprobar(int &x){
+           while( true )
+          {
+            cout<<"\tIngresa: ";
+            cin >> x;
+            if( !cin.good() )
+            {
+              cout << "\tSOLO SE INGRESAN NUMEROS!!!\n"<<endl;
+              cin.clear();
+              cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            }
+            else
+              break;
+          }
+        }
+
+        void comprobar(float &x){
+           while( true )
+          {
+            cout<<"\tIngresa: ";
+            cin >> x;
+            if( !cin.good() )
+            {
+              cout << "\tSOLO SE INGRESAN NUMEROS!!!\n"<<endl;
+              cin.clear();
+              cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            }
+            else
+              break;
+          }
+        }
+
+        void comprobar(char x[]){
+
+           while( true )
+          {
+            cout<<"\tIngresa: ";
+            cin >> x;
+            if( !cin.good() )
+            {
+              cout << "\tSOLO SE INGRESAN CARACTERES!!!\n"<<endl;
+              cin.clear();
+              cin.ignore(numeric_limits<streamsize>::max(),'\n');
+            }
+            else
+              break;
+          }
+        }
 };
 
 #endif // FUNCIONES_H

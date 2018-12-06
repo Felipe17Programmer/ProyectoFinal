@@ -8,8 +8,12 @@
 #include <conio.h>
 
 #include "Menu.h"
-#include "Archivo.h"
 #include "Empleado.h"
+#include "Registro.h"
+#include "Busca.h"
+#include "Elimino.h"
+#include "Lee.h"
+#include "Modifico.h"
 
 #define TECLA_ARRIBA 'i'  //declaraciones constantes para usar las teclas con codigo ascii
 #define TECLA_ABAJO 'k'
@@ -67,12 +71,17 @@ void menu_principal(){
 	char *opciones1[]={"Registrar","Eliminar","Leer","Buscar","Modificar","Salir"};
 	int tamanio=sizeof(opciones1)/sizeof(opciones1[0]);
 
-	Menu <char,int,float>m;
+	//Menu m;
 
     char *opciones2[] = {"Todos","Lineal","Nombre y Clave","Regresar"};
 	int tamanio2=sizeof(opciones2)/sizeof(opciones2[0]);
 
-	Menu <char,int,float>m2("LEER",opciones2,tamanio2);
+	Lee l("LEER",opciones2,tamanio2);
+    Registro r;
+    Busca b;
+    Elimino e;
+    Modifico m;
+    Menu *men;
 
 	do{
 		opcion = menu(titulo1,opciones1,tamanio);
@@ -80,22 +89,27 @@ void menu_principal(){
 		switch(opcion){
 			case 1:
 			    system("cls");
-                m.registro();
+			    men = &r;
+                men->empieza();
                 break;
 			case 2:
 			    system("cls");
-				m.elimino();
+			    men = &e;
+				men->empieza();
 				break;
 			case 3:
-                m2.leo();
+			    men = &l;
+                men->empieza();
 				break;
 			case 4:
 			    system("cls");
-                m.busco();
+			    men = &b;
+                men->empieza();
 				break;
 			case 5:
 			    system("cls");
-                m.modifico();
+			    men = &m;
+                men->empieza();
 				break;
             case 6:
                 repite=false;
